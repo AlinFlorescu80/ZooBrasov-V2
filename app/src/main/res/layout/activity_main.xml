@@ -145,5 +145,27 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textColor="#0097A7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/signOut"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textColor="#009688"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            tools:text="Sign out" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
